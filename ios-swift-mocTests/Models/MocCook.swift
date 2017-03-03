@@ -22,4 +22,12 @@ class MockCook: CookProtocol {
         cookRamenLastSoup = soup
         cookRamenLastExtras = extras
     }
+    
+    func verifyCookRamen(bowls: Int, soup: RamenSoup, extras: [String]) {
+        
+        XCTAssertEqual(cookRamenCallCount, 1)
+        XCTAssertEqual(cookRamenLastBowls, bowls)
+        XCTAssertEqual(cookRamenLastSoup, soup)
+        XCTAssertEqual(cookRamenLastExtras, extras)
+    }
 }
