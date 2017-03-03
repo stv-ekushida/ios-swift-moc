@@ -25,6 +25,8 @@ class WaiterTests: XCTestCase {
         let waiter = Waiter(cook: mocCook)
         
         waiter.order()        
-        mocCook.verifyCookRamen(bowls: 2, soup: .miso, extras: ["wakame","tamago"])
+        mocCook.verifyCookRamen(bowls: 2,
+                                soup: .miso,
+                                extras: ["wakame","tamago"])
     }    
 }

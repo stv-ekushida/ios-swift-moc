@@ -12,7 +12,6 @@
 		BC4215671E69C3F000727577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4215651E69C3F000727577 /* Main.storyboard */; };
 		BC4215691E69C3F000727577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4215681E69C3F000727577 /* Assets.xcassets */; };
 		BC42156C1E69C3F000727577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42156A1E69C3F000727577 /* LaunchScreen.storyboard */; };
-		BC4215821E69C3F000727577 /* ios_swift_mocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4215811E69C3F000727577 /* ios_swift_mocUITests.swift */; };
 		BC4215901E69C40600727577 /* RamenSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42158F1E69C40600727577 /* RamenSoup.swift */; };
 		BC4215921E69C49000727577 /* Waiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4215911E69C49000727577 /* Waiter.swift */; };
 		BC4215941E69C50F00727577 /* CookProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4215931E69C50F00727577 /* CookProtocol.swift */; };
@@ -48,7 +47,6 @@
 		BC4215721E69C3F000727577 /* ios-swift-mocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-swift-mocTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4215781E69C3F000727577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC42157D1E69C3F000727577 /* ios-swift-mocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-swift-mocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC4215811E69C3F000727577 /* ios_swift_mocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swift_mocUITests.swift; sourceTree = "<group>"; };
 		BC4215831E69C3F000727577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC42158F1E69C40600727577 /* RamenSoup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RamenSoup.swift; sourceTree = "<group>"; };
 		BC4215911E69C49000727577 /* Waiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waiter.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				BC4215831E69C3F000727577 /* Info.plist */,
-				BC4215811E69C3F000727577 /* ios_swift_mocUITests.swift */,
 			);
 			path = "ios-swift-mocUITests";
 			sourceTree = "<group>";
@@ -138,7 +135,6 @@
 				BC42158F1E69C40600727577 /* RamenSoup.swift */,
 				BC4215911E69C49000727577 /* Waiter.swift */,
 			);
-			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -149,7 +145,6 @@
 				BC4215681E69C3F000727577 /* Assets.xcassets */,
 				BC42156A1E69C3F000727577 /* LaunchScreen.storyboard */,
 			);
-			name = Applications;
 			path = Applications;
 			sourceTree = "<group>";
 		};
@@ -159,7 +154,6 @@
 				BC4215651E69C3F000727577 /* Main.storyboard */,
 				BC4215631E69C3F000727577 /* ViewController.swift */,
 			);
-			name = Controllers;
 			path = Controllers;
 			sourceTree = "<group>";
 		};
@@ -169,7 +163,6 @@
 				BC4215961E69C54600727577 /* MocCook.swift */,
 				BC4215981E69C58B00727577 /* WaiterTests.swift */,
 			);
-			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -328,7 +321,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4215821E69C3F000727577 /* ios_swift_mocUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +551,7 @@
 				BC4215881E69C3F000727577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC4215891E69C3F000727577 /* Build configuration list for PBXNativeTarget "ios-swift-mocTests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +560,7 @@
 				BC42158B1E69C3F000727577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC42158C1E69C3F000727577 /* Build configuration list for PBXNativeTarget "ios-swift-mocUITests" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +569,7 @@
 				BC42158E1E69C3F000727577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
