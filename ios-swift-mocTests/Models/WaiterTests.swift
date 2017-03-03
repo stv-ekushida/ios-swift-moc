@@ -25,6 +25,6 @@ class WaiterTests: XCTestCase {
         let waiter = Waiter(cook: mocCook)
         
         waiter.order()        
-        XCTAssertTrue(mocCook.cookRamenWasCalled)
+        XCTAssertEqual(mocCook.cookRamenCallCount, 1)
     }
 }

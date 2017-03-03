@@ -11,10 +11,9 @@ import XCTest
 
 class MockCook: CookProtocol {
     
-    var cookRamenWasCalled = false
+    var cookRamenCallCount = 0
     
     func cookRamen(bowls: Int, soup: RamenSoup, extras: [String]) {        
-        cookRamenWasCalled = true
+        cookRamenCallCount += 1
     }
-    
 }
