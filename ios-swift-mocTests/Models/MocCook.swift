@@ -23,11 +23,14 @@ class MockCook: CookProtocol {
         cookRamenLastExtras = extras
     }
     
-    func verifyCookRamen(bowls: Int, soup: RamenSoup, extras: [String]) {
+    func verifyCookRamen(bowls: Int, soup: RamenSoup, extras: [String],
+                         file: StaticString = #file,
+                         line: UInt = #line
+                         ) {
         
-        XCTAssertEqual(cookRamenCallCount, 1)
-        XCTAssertEqual(cookRamenLastBowls, bowls)
-        XCTAssertEqual(cookRamenLastSoup, soup)
-        XCTAssertEqual(cookRamenLastExtras, extras)
+        XCTAssertEqual(cookRamenCallCount, 1, file: file, line: line)
+        XCTAssertEqual(cookRamenLastBowls, bowls, file: file, line: line)
+        XCTAssertEqual(cookRamenLastSoup, soup, file: file, line: line)
+        XCTAssertEqual(cookRamenLastExtras, extras, file: file, line: line)
     }
 }
