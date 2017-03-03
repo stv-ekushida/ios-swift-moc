@@ -26,5 +26,8 @@ class WaiterTests: XCTestCase {
         
         waiter.order()        
         XCTAssertEqual(mocCook.cookRamenCallCount, 1)
+        XCTAssertEqual(mocCook.cookRamenLastBowls, 2)
+        XCTAssertEqual(mocCook.cookRamenLastSoup, .miso)
+        XCTAssertEqual(mocCook.cookRamenLastExtras, ["wakame","tamago"])        
     }
 }

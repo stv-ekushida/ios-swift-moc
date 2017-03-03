@@ -12,8 +12,14 @@ import XCTest
 class MockCook: CookProtocol {
     
     var cookRamenCallCount = 0
+    var cookRamenLastBowls = 0
+    var cookRamenLastSoup: RamenSoup?
+    var cookRamenLastExtras: [String] = []
     
     func cookRamen(bowls: Int, soup: RamenSoup, extras: [String]) {        
         cookRamenCallCount += 1
+        cookRamenLastBowls = bowls
+        cookRamenLastSoup = soup
+        cookRamenLastExtras = extras
     }
 }
