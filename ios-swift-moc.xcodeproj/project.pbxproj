@@ -12,8 +12,12 @@
 		BC4215671E69C3F000727577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4215651E69C3F000727577 /* Main.storyboard */; };
 		BC4215691E69C3F000727577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4215681E69C3F000727577 /* Assets.xcassets */; };
 		BC42156C1E69C3F000727577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC42156A1E69C3F000727577 /* LaunchScreen.storyboard */; };
-		BC4215771E69C3F000727577 /* ios_swift_mocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4215761E69C3F000727577 /* ios_swift_mocTests.swift */; };
 		BC4215821E69C3F000727577 /* ios_swift_mocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4215811E69C3F000727577 /* ios_swift_mocUITests.swift */; };
+		BC4215901E69C40600727577 /* RamenSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42158F1E69C40600727577 /* RamenSoup.swift */; };
+		BC4215921E69C49000727577 /* Waiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4215911E69C49000727577 /* Waiter.swift */; };
+		BC4215941E69C50F00727577 /* CookProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4215931E69C50F00727577 /* CookProtocol.swift */; };
+		BC4215971E69C54600727577 /* MocCook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4215961E69C54600727577 /* MocCook.swift */; };
+		BC4215991E69C58B00727577 /* WaiterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4215981E69C58B00727577 /* WaiterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +46,15 @@
 		BC42156B1E69C3F000727577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC42156D1E69C3F000727577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC4215721E69C3F000727577 /* ios-swift-mocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-swift-mocTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC4215761E69C3F000727577 /* ios_swift_mocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swift_mocTests.swift; sourceTree = "<group>"; };
 		BC4215781E69C3F000727577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC42157D1E69C3F000727577 /* ios-swift-mocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-swift-mocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4215811E69C3F000727577 /* ios_swift_mocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swift_mocUITests.swift; sourceTree = "<group>"; };
 		BC4215831E69C3F000727577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC42158F1E69C40600727577 /* RamenSoup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RamenSoup.swift; sourceTree = "<group>"; };
+		BC4215911E69C49000727577 /* Waiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waiter.swift; sourceTree = "<group>"; };
+		BC4215931E69C50F00727577 /* CookProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookProtocol.swift; sourceTree = "<group>"; };
+		BC4215961E69C54600727577 /* MocCook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MocCook.swift; sourceTree = "<group>"; };
+		BC4215981E69C58B00727577 /* WaiterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaiterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +85,10 @@
 		BC4215551E69C3EF00727577 = {
 			isa = PBXGroup;
 			children = (
+				BC42155F1E69C3F000727577 /* Products */,
 				BC4215601E69C3F000727577 /* ios-swift-moc */,
 				BC4215751E69C3F000727577 /* ios-swift-mocTests */,
 				BC4215801E69C3F000727577 /* ios-swift-mocUITests */,
-				BC42155F1E69C3F000727577 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +105,9 @@
 		BC4215601E69C3F000727577 /* ios-swift-moc */ = {
 			isa = PBXGroup;
 			children = (
-				BC4215611E69C3F000727577 /* AppDelegate.swift */,
-				BC4215631E69C3F000727577 /* ViewController.swift */,
-				BC4215651E69C3F000727577 /* Main.storyboard */,
-				BC4215681E69C3F000727577 /* Assets.xcassets */,
-				BC42156A1E69C3F000727577 /* LaunchScreen.storyboard */,
+				BC42159A1E69C68B00727577 /* Applications */,
+				BC42159B1E69C6A000727577 /* Controllers */,
+				BC4215951E69C52400727577 /* Models */,
 				BC42156D1E69C3F000727577 /* Info.plist */,
 			);
 			path = "ios-swift-moc";
@@ -110,7 +116,7 @@
 		BC4215751E69C3F000727577 /* ios-swift-mocTests */ = {
 			isa = PBXGroup;
 			children = (
-				BC4215761E69C3F000727577 /* ios_swift_mocTests.swift */,
+				BC42159C1E69C6B000727577 /* Models */,
 				BC4215781E69C3F000727577 /* Info.plist */,
 			);
 			path = "ios-swift-mocTests";
@@ -119,10 +125,52 @@
 		BC4215801E69C3F000727577 /* ios-swift-mocUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BC4215811E69C3F000727577 /* ios_swift_mocUITests.swift */,
 				BC4215831E69C3F000727577 /* Info.plist */,
+				BC4215811E69C3F000727577 /* ios_swift_mocUITests.swift */,
 			);
 			path = "ios-swift-mocUITests";
+			sourceTree = "<group>";
+		};
+		BC4215951E69C52400727577 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC4215931E69C50F00727577 /* CookProtocol.swift */,
+				BC42158F1E69C40600727577 /* RamenSoup.swift */,
+				BC4215911E69C49000727577 /* Waiter.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC42159A1E69C68B00727577 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				BC4215611E69C3F000727577 /* AppDelegate.swift */,
+				BC4215681E69C3F000727577 /* Assets.xcassets */,
+				BC42156A1E69C3F000727577 /* LaunchScreen.storyboard */,
+			);
+			name = Applications;
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		BC42159B1E69C6A000727577 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC4215651E69C3F000727577 /* Main.storyboard */,
+				BC4215631E69C3F000727577 /* ViewController.swift */,
+			);
+			name = Controllers;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BC42159C1E69C6B000727577 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC4215961E69C54600727577 /* MocCook.swift */,
+				BC4215981E69C58B00727577 /* WaiterTests.swift */,
+			);
+			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4215901E69C40600727577 /* RamenSoup.swift in Sources */,
 				BC4215641E69C3F000727577 /* ViewController.swift in Sources */,
+				BC4215941E69C50F00727577 /* CookProtocol.swift in Sources */,
 				BC4215621E69C3F000727577 /* AppDelegate.swift in Sources */,
+				BC4215921E69C49000727577 /* Waiter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4215771E69C3F000727577 /* ios_swift_mocTests.swift in Sources */,
+				BC4215991E69C58B00727577 /* WaiterTests.swift in Sources */,
+				BC4215971E69C54600727577 /* MocCook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +354,7 @@
 				BC4215661E69C3F000727577 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		BC42156A1E69C3F000727577 /* LaunchScreen.storyboard */ = {
@@ -310,6 +363,7 @@
 				BC42156B1E69C3F000727577 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
