@@ -27,6 +27,11 @@ class WaiterTests: XCTestCase {
         waiter.order()        
         mocCook.verifyCookRamen(bowls: 2,
                                 soup: .miso,
-                                extras: ["wakame","tamago"])
+                                extrasMatcher:  { extras in
+                                    extras.count == 2 &&
+                                    extras.contains("wakame") &&
+                                    extras.contains("tamago")
+                                    
+        })
     }    
 }
