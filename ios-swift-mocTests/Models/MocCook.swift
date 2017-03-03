@@ -23,7 +23,8 @@ class MockCook: CookProtocol {
         cookRamenLastExtras = extras
     }
     
-    func verifyCookRamen(bowls: Int, soup: RamenSoup, extras: [String],
+    func verifyCookRamen(bowls: Int, soup: RamenSoup,
+                         extrasMatcher: (([String]) -> Bool),
                          file: StaticString = #file,
                          line: UInt = #line
                          ) {
@@ -31,6 +32,8 @@ class MockCook: CookProtocol {
         XCTAssertEqual(cookRamenCallCount, 1, file: file, line: line)
         XCTAssertEqual(cookRamenLastBowls, bowls, file: file, line: line)
         XCTAssertEqual(cookRamenLastSoup, soup, file: file, line: line)
-        XCTAssertEqual(cookRamenLastExtras, extras, file: file, line: line)
+        XCTAssertTrue(extrasMatcher(cookRamenLastExtras),
+                       "extras was \(cookRamenLastExtras)",
+                        file: file,line: line)
     }
 }
